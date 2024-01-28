@@ -1,0 +1,14 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fundo quadrado branco -->
+    <rect width="16" height="16" fill="white" />
+
+    <!-- Desenho do lápis -->
+    <!-- Corpo do lápis -->
+    <rect x="6" y="4" width="4" height="8" fill="#f4c542" />
+    <!-- Borracha do lápis -->
+    <rect x="6" y="3" width="4" height="1" fill="#f28289" />
+    <!-- Ponta do lápis -->
+    <polygon points="6,12 10,12 8,14" fill="#8b4c39" />
+    <!-- Grafite do lápis -->
+    <polygon points="7.5,13 8.5,13 8,14" fill="black" />
+</svg>

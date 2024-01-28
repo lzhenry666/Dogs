@@ -1,0 +1,93 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  top: 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  padding: 0.5rem 0;
+}
+
+.login {
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.login::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background: url('../Assets/usuario.svg') no-repeat center center;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -1px;
+}
+
+
+.user_menu {
+  position: relative;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 2px solid #d6d6db;
+}
+.user_menu:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid #fb1;
+  right: 6px;
+  top: -1px;
+  background-color: var(--active-color);
+}
+
+.user_profile {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.dropdown {
+  list-style: none;
+  margin-right: 1rem;
+  padding: 1.4rem;
+  top: 3rem;
+  position: absolute;
+  background-color: #fb1;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.3s ease;
+  transform-origin: top;
+  color: #ff0606;
+
+}
+
+.dropdown li {
+  margin-bottom: 0.5rem;
+}
+.dropdown li:hover {
+  opacity: 0.7;
+  color: aqua;
+}
+.dropdown.show {
+  opacity: 1;
+  transform: scaleY(1);
+}

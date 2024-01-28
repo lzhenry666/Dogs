@@ -1,0 +1,21 @@
+.comments {
+  overflow-y: auto;
+  word-break: break-word;
+  padding: 0 2rem;
+}
+
+.single.comments {
+  padding: 0px;
+}
+
+.comments li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.cursorSpaan{
+  cursor: pointer;
+}
+.cursorSpaan:hover{
+  color: #2f2f2f;
+  transform: scale(1.1);
+}
